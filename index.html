@@ -8,28 +8,7 @@
     <script type="text/javascript" src="./quotes.js">
     </script>
     <script type="text/javascript">
-      /* const QUOTEBANK = [
-        {
-          quote: "Life is what happens when you’re busy making other plans.",
-          author: "John Lennon"
-        },
-        {
-          quote: "Money and success don’t change people; they merely amplify what is already there.",
-          author: "Will Smith"
-        },
-        {
-          quote: "You never really learn much from hearing yourself speak.",
-          author: "George Clooney"
-        }
-      ] */
-
       window.onload = generateQuote;
-      /*function init() {
-        document.getElementById("text").innerText = "Silly little smurfies!"
-        document.getElementById("author").innerText = "- the Great Smurf"
-      }*/
-
-
       function generateQuote() {
         let index = Math.floor(Math.random() * QUOTEBANK.length);
         document.getElementById("text").innerText = '"' + QUOTEBANK[index].quote + '"';
